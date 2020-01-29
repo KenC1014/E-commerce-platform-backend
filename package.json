@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "env-cmd ./config/dev.env nodemon src/app.js"
+    "start": "node app.js",
+    "dev": "env-cmd ./config/dev.env nodemon app.js"
   },
   "keywords": [],
   "author": "Ken Chen",
