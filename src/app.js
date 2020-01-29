@@ -19,12 +19,12 @@ app.use(cookieParser())
 app.use(cors())
 
 //set up individual router
-app.use(authRouter)
-app.use(userRouter)
-app.use(categoryRouter)
-app.use(productRouter)
-app.use(braintreeRouter)
-app.use(orderRouter)
+app.use('/api',authRouter)
+app.use('/api',userRouter)
+app.use('/api',categoryRouter)
+app.use('/api',productRouter)
+app.use('/api',braintreeRouter)
+app.use('/api',orderRouter)
 
 
 
