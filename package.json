@@ -1,0 +1,30 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "env-cmd ./config/dev.env nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "Ken Chen",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "braintree": "^2.21.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "formidable": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.8.6",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "nodemon": "^2.0.2"
+  }
+}
