@@ -2,6 +2,7 @@ const express = require('express')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
 require('./src/db/mongoose')   //connect to mongoDB
+require('dotenv').config()
 
 //import routers
 const authRouter = require('./src/routers/auth')
