@@ -26,7 +26,7 @@ const create = async (req, res) => {
         let product = new Product(fields)
 
         if(files.photo) {
-            if (files.photo.size > 1000000) {
+            if (files.photo.size > 2000000) {
                 return res.status(400).send({error:'Image must be less than 1Mb in size'})
             }
             product.photo.data = fs.readFileSync(files.photo.path)
